@@ -1,0 +1,9 @@
+<!-- <p>header works!</p> -->
+<div class="header">
+  <h1>
+    <a routerLink="/">{{ title }}</a>
+  </h1>
+  <div *ngIf="currentPath == '/'">
+    <app-button></app-button>
+  </div>
+</div>

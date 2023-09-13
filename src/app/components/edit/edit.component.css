@@ -1,0 +1,38 @@
+.index-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.index-reminder {
+    display: flex;
+    margin-bottom: 20px;
+    /* border: 1px solid black; */
+}
+
+.one {
+    margin-right: 10px;
+}
+
+#reminder {
+    cursor: pointer;
+}
+
+.btn-submit {
+    width: 100%;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.btn-submit:active {
+    transform: translateY(3px);
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 7px;
+    border-radius: 5px;
+}

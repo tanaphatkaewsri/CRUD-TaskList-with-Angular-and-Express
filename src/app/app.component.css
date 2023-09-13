@@ -1,0 +1,13 @@
+.big-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* @media screen and (max-width: 619) */
+
+.container {
+    width: 400px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 20px;
+}

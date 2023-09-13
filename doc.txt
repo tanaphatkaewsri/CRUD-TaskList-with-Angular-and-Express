@@ -1,0 +1,20 @@
+-Angular CRUD API
+    -ng Directives -> built-in directives
+        -ngClass, ngStyle, ngModel
+        -ngIf, ngFor, ngSwitch
+        -<ng-container></ng-container>
+    -use ngSubmit(prevent refresh page) with ngModel
+    -`$event` is output from export observable and we catch it
+    -OnInit -> ngOnInit() {}
+    -angular route??
+-use Express for stored data
+    -async await
+    -json file look like
+    -'try' and 'catch' are part of JavaScript's error handling mechanism
+    -array.splice(index, number-remove, add-item1, ..., add-itemx)
+    -json.stringify(value, replace, space)
+    -post method is secure and data is pass in the request body, it's cannot be fixed in the url -> can watch res in post only pass by request (and receive response)***
+    -for post api dont forget to convert express.json
+    -Using the same URL for both the GET and PUT requests makes it clear that you are updating an existing resource, and the resource's identifier (e.g., ID) **
+    -When you don't send a response, the client (in this case, your Angular application) may wait indefinitely for a response, leading to delays and potential timeouts. ******
+    -code 201, 204 it's have important, and i can lead to specific order execute

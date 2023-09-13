@@ -1,0 +1,44 @@
+<!-- <p>form works!</p> -->
+
+<!-- {{ toggleForm }} -->
+
+<div class="contain-form" *ngIf="!toggleForm">
+  <form (ngSubmit)="onSubmit()">
+    <div class="index-form">
+      <label for="task">Task</label>
+      <input
+        type="text"
+        id="task"
+        name="task"
+        [(ngModel)]="new_task.task"
+        placeholder="Add Task"
+        required
+      />
+    </div>
+    <div class="index-form">
+      <label for="day">Day & Time</label>
+      <input
+        type="text"
+        id="day"
+        name="date"
+        [(ngModel)]="new_task.date"
+        placeholder="Add Day & Time"
+        required
+      />
+    </div>
+    <div class="index-reminder">
+      <div class="one">
+        <label for="reminder">Set Reminder</label>
+      </div>
+      <div class="two">
+        <input
+          type="checkbox"
+          id="reminder"
+          name="reminder"
+          [(ngModel)]="new_task.reminder"
+        />
+      </div>
+    </div>
+    <input type="submit" class="btn-submit" value="Save Task" />
+  </form>
+</div>

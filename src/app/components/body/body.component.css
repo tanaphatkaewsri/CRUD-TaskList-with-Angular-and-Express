@@ -1,0 +1,37 @@
+.task-item-fail {
+    display: flex;
+    justify-content: center;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.content {
+    padding-left: 20px;
+}
+
+.operator {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 20px;
+    /* border: 1px solid black; */
+}
+
+.reminder-checked {
+    background-color: lightgreen;
+}
+
+.gear:hover,
+.check:hover,
+.trash:hover {
+    cursor: pointer;
+    color: red;
+}

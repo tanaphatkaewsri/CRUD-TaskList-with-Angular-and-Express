@@ -1,0 +1,41 @@
+<!-- <p>body works!</p> -->
+
+<div class="tasks" *ngIf="!tasks[0]">
+  <div class="task-item-fail">
+    <p>Data is undefined or null</p>
+  </div>
+</div>
+
+<div class="tasks" *ngIf="tasks[0]">
+  <div
+    class="task-item"
+    *ngFor="let task of tasks"
+    [ngClass]="{ 'reminder-checked': task.reminder }"
+  >
+    <div class="content">
+      <h3>{{ task.task }}</h3>
+      <p>{{ task.date }}</p>
+      <!-- <p>{{ task.reminder }}</p> -->
+    </div>
+    <div class="operator">
+      <fa-icon
+        class="check"
+        [icon]="faSquareCheck"
+        (click)="reminderTask(task.id, task)"
+        style="font-size: 20px"
+      ></fa-icon>
+      <fa-icon
+        class="gear"
+        [icon]="faGear"
+        (click)="editTask(task)"
+        style="font-size: 20px"
+      ></fa-icon>
+      <fa-icon
+        class="trash"
+        [icon]="faTrash"
+        (click)="deleteTask(task.id)"
+        style="font-size: 20px"
+      ></fa-icon>
+    </div>
+  </div>
+</div>

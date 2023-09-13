@@ -1,0 +1,11 @@
+button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70px;
+    padding: 5px;
+}
+
+button:active {
+    transform: translateY(3px);
+}

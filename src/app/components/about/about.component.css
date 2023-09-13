@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    background-color: lightcoral;
+}
